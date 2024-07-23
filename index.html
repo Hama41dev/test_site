@@ -31,7 +31,25 @@
         <script src="js/respond.min.js"></script>
     <![endif]-->
 	
-</head>
+<style>
+	.logo-container {
+		display: inline-block;
+		border-radius: 50%; /* Rend l'image ronde */
+		overflow: hidden; /* Assure que l'image reste dans le cercle */
+		width: 40px; /* Largeur du cercle */
+		height: 40px; /* Hauteur du cercle, doit être égale à la largeur pour une forme parfaitement ronde */
+	}
+	
+	.logo-img {
+		width: 100%;
+        height: 100%;
+       object-fit: cover; /* Conserve les proportions de l'image */
+	}
+	
+	
+
+</style>
+</head>	
 
  <body>
 <header>
@@ -47,8 +65,13 @@
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                 </button>
-                <h1 class="navbar-brand page-scroll">
-					<a href="#page-top">OpenHouse</a>
+				<h1 class="navbar-brand page-scroll">
+					<a href="#page-top">
+						<div class="logo-container">
+							<img src="images/pouce.jpg" alt="Logo" class="logo-img">
+						</div>
+						Coup d'pouce
+					</a>
 				</h1>
             </div>
 
@@ -59,19 +82,19 @@
                         <a href="#page-top"></a>
                     </li>
                     <li>
-                        <a class="page-scroll" href="index.html">Home</a>
+                        <a class="page-scroll" href="index.html">Accueil</a>
                     </li>
                     <li>
-                        <a class="page-scroll" href="about.html">About</a>
+                        <a class="page-scroll" href="">About</a>
                     </li>
                     <li>
-                        <a class="page-scroll" href="gallery.html">Gallery</a>
+                        <a class="page-scroll" href="">Gallery</a>
                     </li>
                     <li>
-                        <a class="page-scroll" href="service.html">Service</a>
+                        <a class="page-scroll" href="">Service</a>
                     </li>
                     <li>
-                        <a class="page-scroll" href="contact.html">Contact</a>
+                        <a class="page-scroll" href="">Contact</a>
                     </li>
                 </ul>
             </div>
@@ -91,7 +114,7 @@
 			<!-- Wrapper for slides -->
 			<div class="carousel-inner">
 				<div class="item active">
-					<img src="images/banner1.jpg" alt="First slide">
+					<img src="images/enfantA.jpg" alt="First slide">
 					<!-- Static Header -->
 					<div class="header-text hidden-xs">
 						<div class="col-md-12">
@@ -102,7 +125,7 @@
 					</div><!-- /header-text -->
 				</div>
 				<div class="item">
-					<img src="images/banner2.jpg" alt="Third slide">
+					<img src="images/enfantB.jpg" alt="Third slide">
 					<!-- Static Header -->
 					<div class="header-text hidden-xs">
 						<div class="col-md-12">
@@ -112,6 +135,7 @@
 						</div>
 					</div><!-- /header-text -->
 				</div>
+				
 			</div>
 			<!-- Controls -->
 			<a class="left carousel-control" href="#carousel-example-generic" data-slide="prev">
@@ -126,324 +150,112 @@
 
 	
 	<!-- /////////////////////////////////////////Content -->
-	<div id="page-content">
 	
-		<!-- ////////////Content Box 01 -->
-		<section class="box-content box-1 box-style-1" id="about">
-			<div class="container">
-				<div class="row">
-					<div class="col-sm-4">
-						<div class="box-item">
-							<div class="wrap-img">
-								<img src="images/key.png" />
-							</div>
-							<h3 class="services-heading">Text Heading A</h3>
-							<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima quo. Aenean feugiat in ante et blandit. Vestibulum posuere molestie risus, ac interdum magna porta non. </p>
-						</div>
-			 		</div>
-			 		<div class="col-sm-4">
-						<div class="box-item">
-							<div class="box-item">
-							<div class="wrap-img">
-								<img src="images/money.png" />
-							</div>
-							<h3 class="services-heading">Text Heading B</h3>
-							<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima quo. Aenean feugiat in ante et blandit. Vestibulum posuere molestie risus, ac interdum magna porta non. </p>
-						</div>
-						</div>
-			 		</div>
-					<div class="col-sm-4">
-						<div class="box-item">
-							<div class="box-item">
-							<div class="wrap-img">
-								<img src="images/days.png" />
-							</div>
-							<h3 class="services-heading">Text Heading C</h3>
-							<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima quo. Aenean feugiat in ante et blandit. Vestibulum posuere molestie risus, ac interdum magna porta non. </p>
-						</div>
-						</div>
-			 		</div>
-				</div>
-			</div>
-		</section>
+	
+	
+
+		<div id="page-content">
 		
-		<!-- ////////////Content Box 02 -->
-		<section class="box-content box-2" id="services">
-			<div class="container">
-				<div class="row heading">
-					 <div class="col-lg-12">	
-	                    <h2>TOP HOLIDAY DESTINATIONS</h2>
-	                    <hr>
-                    	<div class="intro">Lorem ipsum dolor sit amet</div>
-	                </div>
-				</div>
-				<div class="categories">
-				  <ul class="cat">
-					<li>
-						<ol class="type list-inline">
-							<li><a href="#" data-filter="*" class="active">All</a></li>
-							<li><a href="#" data-filter=".lake_wanaka">Lake Wanaka</a></li>
-							<li><a href="#" data-filter=".ohama_beach">Ohama Beach</a></li>
-							<li><a href="#" data-filter=".taupo_central">Taupo Central</a></li>
-						</ol>
-					</li>
-				  </ul>
-				  <div class="clearfix"></div>
-				</div>
-				
-				<div class="row">
-					<div class="portfolio-items">
-						<div class="col-sm-6 col-md-3 col-lg-3 taupo_central">
-							<div class="post">
-								<div class="item-container wow fadeInUp" data-wow-delay="200ms">
-									<div class="item-caption">
-										<div class="item-caption-inner">
-											<div class="item-caption-inner1">
-												<a class="example-image-link" href="images/2.jpg" data-lightbox="example-set" data-title="Click the right half of the image to move forward.">
-													<i class="fa fa-search"></i>
-												</a>
-											</div>
-										</div>
-									</div>
-									<img src="images/2-thumb.jpg" />
+			<section class="box-content ">
+				<div class="container">
+					<div class="post">
+						<h1 class="entry-title">Coup d'pouce ...Quand l'Afrique aide l'Afrique</h1>
+						<div class="row">
+							<p>Coup d'pouce est une association basée à Yamoussoukro qui apporte une aide aux enfants de la zone en difficulté scolaire et offre aux adultes une mise à niveau permettant d'intégrer le monde du travail; ce dernier aspect concerne surtout les mères de famille.
+								Comme on dit chez nous '' Mieux vaut prévenir que guérir '', nous avons décidé de prévenir, de régler ces problèmes dès l'enfance suivant la ligne qu’a tracé St JOSEMARIA, qui a encouragé beaucoup d'initiatives dans le domaine éducatif, enseignant à apprendre à pêcher plutôt que de donner indéfiniment du poisson.
+
+C'est ainsi que '' Coup de pouce "est né en 2019 grâce au travail avec des étudiantes dans le petit village de ''Djahakro '' à la suite des cours de catéchèse que nous y donnions. Nous avions remarqué les grandes lacunes des enfants qui même en classe de CM ne savaient pas lire. Le problème n'étant pas propre au seul village de Djahakro, nous avons décidé d'étendre les activités de lecture et apprentissage de la lecture à d'autres villages comme Toumbokro, Ngattakro ….
+
+							</p>
+							<br>
+							<div class="row" style="text-align: center;">
+								<div class="col-md-12" style="display: inline-block;">
+									<!-- Remplacez l'URL de la vidéo par celle de votre choix -->
+									<iframe width="560" height="315" src="https://www.youtube.com/embed/nJza3RP6VzY?si=pimPwj9CEMpmHILe" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 								</div>
-								<span>Aenean feugiat in ante et blandit. Vestibulum posuere molestie risus, ac interdum magna porta non.</span>
-							</div>
-						</div>
-						<div class="col-sm-6 col-md-3 col-lg-3 taupo_central">
-						  <div class="post">
-								<div class="item-container wow fadeInUp" data-wow-delay="200ms">
-									<div class="item-caption">
-										<div class="item-caption-inner">
-											<div class="item-caption-inner1">
-												<a class="example-image-link" href="images/1.jpg" data-lightbox="example-set" data-title="Click the right half of the image to move forward.">
-													<i class="fa fa-search"></i>
-												</a>
-											</div>
-										</div>
-									</div>
-									<img src="images/1-thumb.jpg" />
-								</div>
-								<span>Aenean feugiat in ante et blandit. Vestibulum posuere molestie risus, ac interdum magna porta non.</span>
-							</div>
-						</div>
-						<div class="col-sm-6 col-md-3 col-lg-3 taupo_central">
-							<div class="post">
-								<div class="item-container wow fadeInUp" data-wow-delay="200ms">
-									<div class="item-caption">
-										<div class="item-caption-inner">
-											<div class="item-caption-inner1">
-												<a class="example-image-link" href="images/2.jpg" data-lightbox="example-set" data-title="Click the right half of the image to move forward.">
-													<i class="fa fa-search"></i>
-												</a>
-											</div>
-										</div>
-									</div>
-									<img src="images/2-thumb.jpg" />
-								</div>
-								<span>Aenean feugiat in ante et blandit. Vestibulum posuere molestie risus, ac interdum magna porta non.</span>
-							</div>					
-						</div>
-						<div class="col-sm-6 col-md-3 col-lg-3 lake_wanaka">
-							<div class="post">
-								<div class="item-container wow fadeInUp" data-wow-delay="200ms">
-									<div class="item-caption">
-										<div class="item-caption-inner">
-											<div class="item-caption-inner1">
-												<a class="example-image-link" href="images/3.jpg" data-lightbox="example-set" data-title="Click the right half of the image to move forward.">
-													<i class="fa fa-search"></i>
-												</a>
-											</div>
-										</div>
-									</div>
-									<img src="images/3-thumb.jpg" />
-								</div>
-								<span>Aenean feugiat in ante et blandit. Vestibulum posuere molestie risus, ac interdum magna porta non.</span>
-							</div>
-						</div>
-						<div class="col-sm-6 col-md-3 col-lg-3 lake_wanaka">
-							<div class="post">
-								<div class="item-container wow fadeInUp" data-wow-delay="200ms">
-									<div class="item-caption">
-										<div class="item-caption-inner">
-											<div class="item-caption-inner1">
-												<a class="example-image-link" href="images/4.jpg" data-lightbox="example-set" data-title="Click the right half of the image to move forward.">
-													<i class="fa fa-search"></i>
-												</a>
-											</div>
-										</div>
-									</div>
-									<img src="images/4-thumb.jpg" />
-								</div>
-								<span>Aenean feugiat in ante et blandit. Vestibulum posuere molestie risus, ac interdum magna porta non.</span>
-							</div>
-						</div>
-						<div class="col-sm-6 col-md-3 col-lg-3 lake_wanaka">
-							<div class="post">
-								<div class="item-container wow fadeInUp" data-wow-delay="200ms">
-									<div class="item-caption">
-										<div class="item-caption-inner">
-											<div class="item-caption-inner1">
-												<a class="example-image-link" href="images/1.jpg" data-lightbox="example-set" data-title="Click the right half of the image to move forward.">
-													<i class="fa fa-search"></i>
-												</a>
-											</div>
-										</div>
-									</div>
-									<img src="images/1-thumb.jpg" />
-								</div>
-								<span>Aenean feugiat in ante et blandit. Vestibulum posuere molestie risus, ac interdum magna porta non.</span>
-							</div>
-						</div>
-						<div class="col-sm-6 col-md-3 col-lg-3 ohama_beach">
-							<div class="post">
-								<div class="item-container wow fadeInUp" data-wow-delay="200ms">
-									<div class="item-caption">
-										<div class="item-caption-inner">
-											<div class="item-caption-inner1">
-												<a class="example-image-link" href="images/3.jpg" data-lightbox="example-set" data-title="Click the right half of the image to move forward.">
-													<i class="fa fa-search"></i>
-												</a>
-											</div>
-										</div>
-									</div>
-									<img src="images/3-thumb.jpg" />
-								</div>
-								<span>Aenean feugiat in ante et blandit. Vestibulum posuere molestie risus, ac interdum magna porta non.</span>
-							</div>
-						</div>
-						<div class="col-sm-6 col-md-3 col-lg-3 ohama_beach">
-							<div class="post">
-								<div class="item-container wow fadeInUp" data-wow-delay="200ms">
-									<div class="item-caption">
-										<div class="item-caption-inner">
-											<div class="item-caption-inner1">
-												<a class="example-image-link" href="images/4.jpg" data-lightbox="example-set" data-title="Click the right half of the image to move forward.">
-													<i class="fa fa-search"></i>
-												</a>
-											</div>
-										</div>
-									</div>
-									<img src="images/4-thumb.jpg" />
-								</div>
-								<span>Aenean feugiat in ante et blandit. Vestibulum posuere molestie risus, ac interdum magna porta non.</span>
 							</div>
 						</div>
 					</div>
 				</div>
-			</div>
-		</section>
+			</section>
+			
+			
+		</div>
 		
-		<!-- ////////////Content Box 04 -->
-		<section class="box-content box-4 box-style-1" id="news">
+		<!-- /////////////////////////////////////////Content -->
+	<div id="page-content">
+		
+		<!-- ////////////Content Box -->
+		<section class="box-content box-style-1">
+		
 			<div class="container">
 				<div class="row heading">
 					 <div class="col-lg-12">	
-	                    <h2>TESTIMONIALS</h2>
+	                    <h2>Nos activites</h2>
 	                    <hr class="line02">
                     	<div class="intro">Lorem ipsum dolor sit amet</div>
 	                </div>
 				</div>
 				<div class="row">
-					<div class="col-md-4">
-						<div class="box-item">
-							<div class="wrap-img">
-								<img src="images/people1.jpg" class="img-circle" alt="">
+					<div class="post" style="background: #fff;">
+						<div class="col-lg-6" style="padding: 0;">
+							<img src="images/lir.jpg"/>
+						</div>
+						<div class="col-lg-6">
+							<div class="t-center" style="padding: 70px 0;">
+								<h3>Le projet ‘’Rêves d’écoliers ’’</h3>
+								<p>Le projet ‘’Rêves d’écoliers ’’ se propose de renforcer les acquis en matière de lecture et d’écriture d’enfants déscolarisés ou scolarisés mais présentant un retard dans leur processus d’apprentissage. Plusieurs élèves, âgés de 7 à 15 ans, bénéficient d’un soutien scolaire et d’un accompagnement personnalisé en vue d’améliorer leur niveau scolaire.
+
+									Ce projet donne aux enfants, en particulier aux jeunes filles, l’opportunité de progresser dans leurs études, d’acquérir ou renforcer des connaissances de base et des valeurs qui leur assureront une place dans la société grâce éventuellement aux habitudes d’étude et de lecture qui leur sont inculquées et aux activités d’éveil (musique, peinture) qui favorisent l’apprentissage.  </p>
+								<a class="btn btn-skin" href="single.html">Read More</a>
+							</div>	
+						</div>
+					</div>
+					<div class="post" style="background: #fff;">
+						<div class="col-lg-6 fix-right" style="padding: 0;">
+							<div class="art-header">
+								<img src="images/abc.jpg"/>
 							</div>
-							<p>Aenean feugiat in ante et blandit. Vestibulum posuere molestie risus, ac interdum magna porta non. Pellentesque rutrum fringilla elementum. Curabitur tincidunt porta lorem vitae accumsan. Aenean feugiat in ante et blandit. Vestibulum posuere molestie risus, ac interdum magna porta non. Pellentesque rutrum fringilla elementum. Curabitur tincidunt porta lorem vitae accumsan. </p>
-							<div class="info">
-								WILL SMITH
+						</div>
+						<div class="col-lg-6">
+							<div class="t-center" style="padding: 70px 0;">
+								<h3>Alphabetisation</h3>
+								<p>Alphabétisation aux mamans à Ouffoué-diékro et Djahakro, activités génératrices de revenus à Djahakro.</p>
+								<a class="btn btn-skin" href="single.html">Read More</a>
 							</div>
 						</div>
 					</div>
-					<div class="col-md-4">
-						<div class="box-item">
-							<div class="wrap-img">
-								<img src="images/people2.jpg" class="img-circle" alt="">
-							</div>
-							<p>Aenean feugiat in ante et blandit. Vestibulum posuere molestie risus, ac interdum magna porta non. Pellentesque rutrum fringilla elementum. Curabitur tincidunt porta lorem vitae accumsan. Aenean feugiat in ante et blandit. Vestibulum posuere molestie risus, ac interdum magna porta non. Pellentesque rutrum fringilla elementum. Curabitur tincidunt porta lorem vitae accumsan. </p>
-							<div class="info">
-								WILL SMITH
-							</div>
+					<div class="post" style="background: #fff;">
+						<div class="col-lg-6" style="padding: 0;">
+							<img src="images/hygiene.jpg"/>
+						</div>
+						<div class="col-lg-6">
+							<div class="t-center" style="padding: 70px 0;">
+								<h3> Formation en hygiène et concours interclasse</h3>
+								<p>romouvoir l’hygiène en milieu scolaire en renforçant chez les élèves les bonnes habitudes d’hygiène et l’implication pour un environnement salubre. Le manque d’hygiène et l’insalubrité sont non seulement causes de nombreuses pathologies, en même temps, il traduit un manque d’éducation et de civisme. Trois groupes scolaires dans la ville de Yamoussoukro ont débuté le programme, en 2022. Ce sont : Ngokro, Santa Familia et Sainte Famille.</p>
+								<a class="btn btn-skin" href="single.html">Read More</a>
+							</div>	
 						</div>
 					</div>
-					<div class="col-md-4">
-						<div class="box-item">
-							<div class="wrap-img">
-								<img src="images/people3.jpg" class="img-circle" alt="">
-							</div>
-							<p>Aenean feugiat in ante et blandit. Vestibulum posuere molestie risus, ac interdum magna porta non. Pellentesque rutrum fringilla elementum. Curabitur tincidunt porta lorem vitae accumsan. Aenean feugiat in ante et blandit. Vestibulum posuere molestie risus, ac interdum magna porta non. Pellentesque rutrum fringilla elementum. Curabitur tincidunt porta lorem vitae accumsan. </p>
-							<div class="info">
-								WILL SMITH
-							</div>
-						</div>
-					</div>
+					
 				</div>
 			</div>
 		</section>
 		
 	</div>
+		
+		
+	</div>
 	
 	<!-- FOOTER -->
 	<footer>
-		<div class="top-footer">
-			<div id="owl-brand" class="owl-carousel">
-				<div class="item">
-					<a href="single.html"><img src="images/15.jpg" /></a>
-				</div>
-				<div class="item">
-					<a href="single.html"><img src="images/16.jpg" /></a>
-				</div>
-				<div class="item">
-					<a href="single.html"><img src="images/17.jpg" /></a>
-				</div>
-				<div class="item">
-					<a href="single.html"><img src="images/18.jpg" /></a>
-				</div>
-				<div class="item">
-					<a href="single.html"><img src="images/19.jpg" /></a>
-				</div>
-				<div class="item">
-					<a href="single.html"><img src="images/20.jpg" /></a>
-				</div>
-				<div class="item">
-					<a href="single.html"><img src="images/21.jpg" /></a>
-				</div>
-			</div>
-		</div>
-		<div class="wrap-footer">
-			<div class="container">
-				<div class="row"> 
-					<div class="col-footer col-md-4">
-						<h2 class="footer-title">About Us</h2>
-						<div class="textwidget">Aenean feugiat in ante et blandit. Vestibulum posuere molestie risus, ac interdum magna porta non. Pellentesque rutrum fringilla elementum. Curabitur tincidunt porta lorem vitae accumsan. <br> <br> 
-						Aenean feugiat in ante et blandit. Vestibulum posuere molestie risus, ac interdum magna porta non. Pellentesque rutrum fringilla elementum. Curabitur tincidunt porta lorem vitae accumsan.</div>
-					</div> 
-					<div class="col-footer col-md-4 widget_recent_entries">
-						<h2 class="footer-title">Recent Posts</h2>
-						<ul>
-							<li><a href="#">MOST VISITED COUNTRIES</a></li>
-							<li><a href="#">5 PLACES THAT MAKE A GREAT HOLIDAY</a></li>
-							<li><a href="#">PEBBLE TIME STEEL IS ON TRACK TO SHIP IN JULY</a></li>
-							<li><a href="#">STARTUP COMPANY&#8217;S CO-FOUNDER TALKS ON HIS NEW PRODUCT</a></li>
-						</ul>
-					</div>
-					<div class="col-footer col-md-4">
-						<h2 class="footer-title">NEWS LETTER</h2>
-						If you want to receive our latest news send directly to your email, please leave your email address bellow. Subscription is free and you can cancel anytime.
-						<form action="#" method="post">
-							<input type="text" name="your-name" value="" size="40" placeholder="Your Email" />
-							<input type="submit" value="SUBSCRIBE" class="btn btn-3" />
-						</form>
-					</div>
-				</div>
-			</div>
-		</div>
+		
+		
 		<div class="bottom-footer">
 			<div class="container">
 				<div class="row">
 					<div class="col-md-4">
-						<p>Copyright 20xx - Designed by <a href="https://www.Zerotheme.com">Zerotheme</a></p>
+						<p>Copyright 20xx - Designed by <a href="">HamaAlix</a></p>
 					</div>
 					<div class="col-md-4">
 						<ul class="list-inline social-buttons">
